@@ -1,0 +1,32 @@
+** authentication
+   Change your andrew id here.
+
+#+BEGIN_SRC text :tangle ~/.authinfo
+machine smtp.andrew.cmu.edu port 587 login jkitchin
+#+END_SRC
+
+Then, click this link:
+
+elisp:org-babel-tangle
+
+
+file+emacs:~/.authinfo
+
+
+C-x m
+
+
+The word is misspelled so you can fix it later TiO2 
+
+C-; M-o gives you a menu to save words, ignore words, etc... Double double words are underlined. 
+
+
+C-x d
+C-/  undo
+
+C-x u  undo-tree
+
+* Magit
+  
+
+elisp:magit-status   or M-x magit-status  or <f5>
