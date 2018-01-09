@@ -30,3 +30,6 @@ C-x u  undo-tree
   
 
 elisp:magit-status   or M-x magit-status  or <f5>
+
+
+Press s to stage and cc to commit
