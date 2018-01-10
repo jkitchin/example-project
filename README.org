@@ -33,3 +33,68 @@ elisp:magit-status   or M-x magit-status  or <f5>
 
 
 Press s to stage and cc to commit
+
+* Searching
+  
+** Searching in a buffer:
+C-s  M-x counsel-grep-or-swiper
+
+** Search in all open buffers
+M-x swiper-all
+
+** Search in a project
+   
+M-x counsel-git-grep
+
+** search org files
+   
+
+elisp:ivy-org-jump-to-heading
+
+C-x d
+
+
+* contacts
+  
+
+** John Kitchin
+   :PROPERTIES:
+   :EMAIL:    johnrkitchin@gmail.com
+   :END:
+
+
+C-c C-x p  to add a property
+
+M-x ivy-contacts
+
+
+* DONE fix mu4e contacts for windows
+  CLOSED: [2018-01-10 Wed 08:33] DEADLINE: <2018-01-10 Wed>
+
+Shift right /shift left
+
+
+Deadline: C-c C-d
+
+(setq contacts-files '("path to some org-file"))
+
+(use-package contacts
+  :ensure nil
+  :load-path scimax-dir)
+
+
+* DONE fix agenda for all todos
+  CLOSED: [2018-01-10 Wed 13:31] DEADLINE: <2018-01-10 Wed>
+elisp:nb-agenda   (all TODOs not working)
+
+* DONE spell check on windows not turning on automatically?
+  CLOSED: [2018-01-10 Wed 13:30] DEADLINE: <2018-01-10 Wed>
+
+For some reason, the spell-checker is not getting turned on automatically on Windows. Add this to your user.el file to fix this.
+
+(add-hook 'org-mode-hook
+	    (lambda ()
+	      (flyspell-mode +1)
+	      (flycheck-mode +1)))
+
+This should turn the spell-checker on when you open an org-mode file. You will have to close and reopen any org-files that are already open to make this work.
